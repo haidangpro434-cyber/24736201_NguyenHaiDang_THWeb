@@ -19,20 +19,54 @@
     }
     
     .search {
+        display: flex;
+        justify-content: center;
         padding: 10px;
     }
+
+    .search-box {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        height: 30px;
+        box-sizing: border-box;
+        background-color: #f3f4f8;
+    }
     
+    .search-box input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
     .main {
+        display: flex;
+        justify-content: center;
         padding: 10px;
     }
     
     .footer {
         padding: 10px;
     }
+
+    .header > div:first-child {
+        display: flex;
+        align-items: center;
+    }
+
+    .header > div:last-child {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
     
     li {
         display: inline-block;
         margin: 10px;
+    }
+
+    li:hover {
+        color: blue;
+        border-bottom: 1px solid blue;
     }
 </style>
 
@@ -57,8 +91,18 @@
                 <div class="muiten"><img src="./images/muiten.png" alt=""></div>
             </div>
         </div>
-        <div class="search">content</div>
-        <div class="main">main</div>
+        <div class="search">
+            <div class="search-box">
+                <span class="iconsearch">🔍</span>
+                <input type="text" placeholder="Search everything">
+                <span class = "iconpicture">🖼️</span>
+                <span class = "iconmic">🎙️</span>
+            </div>
+        </div>
+        <div class="main">
+            <h1>Trending Image Searches</h1>
+
+        </div>
         <div class="footer">footer</div>
     </div>
 </body>
